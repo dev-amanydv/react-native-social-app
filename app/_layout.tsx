@@ -5,13 +5,7 @@ export default function RootLayout() {
   return (
     <SafeAreaProvider>
       <SafeAreaView style={{flex: 1}}>
-        <Stack>
-          <Stack.Screen
-            name="index"
-            options={{ headerShown: true, title: "Feed" }}
-          />
-        </Stack>
-        
+        <Stack screenOptions={{headerShown: false}}/>
       </SafeAreaView>
     </SafeAreaProvider>
   );
